@@ -1,7 +1,8 @@
 
 # Overview
 
-Steps :
+### Directions :
+
 Load the attached fact and the rules file into he KB.
 
 
