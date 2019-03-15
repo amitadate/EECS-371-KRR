@@ -2,7 +2,7 @@
 # Overview
 
 Steps :
-Load the attached fact and the rules file int he KB.
+Load the attached fact and the rules file into he KB.
 
 
 Run the queries from the below 
@@ -12,14 +12,22 @@ Run the queries from the below
 
 Event Recommender recommends events for the next few days from the current date. It takes into consideration the user interest and provides recommendation based on the user interest. Also, user has flexibility to choose the number of days he/she wants to check the recommendation for. 
  
-Scale : It works for two professors now:
+### Scale :
+It works for two professors now:
 WillieWilson 
 AggelosKKatsaggelo
 
+
 Query syntax :(talkrecommender ?talk1 ?person ?noofdays)
 Example :
+
+
 (talkrecommender ?talk1 WillieWilson 1)
+
+
 (talkrecommender ?talk1 WillieWilson 5)
+
+
 (talkrecommender ?talk1 AggelosKKatsaggelo 2)
 
 Etc
