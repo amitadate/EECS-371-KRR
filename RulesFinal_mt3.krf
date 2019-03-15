@@ -1,0 +1,63 @@
+(in-microtheory KRR-Winter2019RulesMt3)
+
+;;;By, Omkar Satpute, Amit Adate, Mayank Malik, Jaieu Sheil
+
+;;;Project Rules ....
+
+;;;Which talks should a person attend depending on their research interest?
+(<== (talkrecommender2 ?talk1 ?person ?noofdays)
+(researchInterest ?person ?subject)
+(genls ?subject ?colparent)
+(talkDate ?talk1 ?date)
+(currentDate ?now)
+(destructuredCycDate ?date ?year1 ?month1 ?day)
+(destructuredCycDate ?now ?year2 ?month2 ?today)
+(evaluate ?diff (DifferenceFn ?day ?today))
+(lessThan ?diff ?noofdays)
+(greaterThan ?diff -1)
+(talkOn ?talk1 ?subject1)
+(isa ?subject1 ?col1)
+(genls ?col1 ?colparent))
+
+
+;;;Which courses do two people have in common?
+(<== (commomcourse_bet ?person1 ?person2 ?subject)
+(courseTaken ?person1 ?subject)
+(courseTaken ?person2 ?subject))
+
+;;;Who can help person1 with their assignment on a particular subject?
+(<== (help_on_assignment ?person1 ?assignment ?person2)
+(assignmentOfCourse ?assignment ?course)
+(courseIn ?course ?fieldofstudy)
+(expertiseIn ?person2 ?fieldofstudy))
+
+
+;;;Which courses should the student take in the next quarter?
+(<== (courseRecommender ?student ?quarter ?course)
+(isa ?course NUCourse)
+(courseTerm ?course ?quarter)
+(courseTaken ?student ?course1)
+(different ?course1 ?course)
+(courseIn ?course ?fieldOfStudy)
+(interests ?student ?fieldOfStudy highToVeryHighAmountOf)
+)
+
+;;;Which courses should the student take in the next quarter?
+(<== (group_suggestion ?person1 ?course ?groupsize ?group)
+(courseTaken ?person1 ?course)
+(courseTaken ?person2 ?course)
+(courseTaken ?person3 ?course)
+(courseTaken ?person4 ?course)
+(expertiseIn ?person1 ?expertise1)
+(expertiseIn ?person2 ?expertise2)
+(expertiseIn ?person3 ?expertise3)
+(expertiseIn ?person4 ?expertise4)
+(different ?expertise1 ?expertise2 ?expertise3 ?expertise4)
+(checkGroupSize ?person1 ?person2 ?person3 ?person4 ?groupsize ?group)
+)
+
+(<== (checkGroupSize ?person1 ?person2 ?person3 ?person4 ?groupsize ?grouplist)
+(evaluate ?group (TheSet ?person1 ?person2 ?person3 ?person4))
+(evaluate ?grouplist (SortFn (SetToListFn ?group) alphalessp StringFn))
+(evaluate ?gsize (LengthOfListFn ?grouplist))
+(equals ?groupsize ?gsize))
