@@ -3,7 +3,8 @@
 
 Steps :
 Load the attached fact and the rules file int he KB.
-\newline
+
+
 Run the queries from the below 
 
 
