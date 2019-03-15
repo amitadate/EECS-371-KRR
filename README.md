@@ -149,7 +149,7 @@ And it works for the following quarters:
 
  (courseRecommender Quincia
   (SpringQuarterFn(AcademicYearFn NorthwesternUniversity (YearFn 2019)))
-  ?course
+  ?course)
 
 ### Future work for Course Recommender:
 
