@@ -75,6 +75,7 @@ Note: It takes a while to run since we have a lot of students in the kb. Ideally
 Right now, the query takes a while to run. If we had more time, we would have tried to write the query in a different way such that it runs faster. Also, while it checks all the students in the kb, the expertise are not defined for all of them. So, we would have liked to flesh out all the student in the kb instead of a few.
 
 
+
 ## Help on Assignment
 
 The Help_on_Assignment returns the names of the people who can assist an individual on that assignment. It essentially matches with the expertise required for the completing said assignment
@@ -115,6 +116,8 @@ HCI-HW4
 
 (help_on_assignment Amit KRR-HW4 ?person2)
 
+
+
 ## Course recommender
 
 The courseRecommender returns the names of the courses that the student could take in the given quarter which also belong to the field of study he is interested in. It essentially matches the academic interest of the student with the field of study of the courses available in the given quarter.
@@ -146,7 +149,12 @@ And it works for the following quarters:
 
  (courseRecommender Quincia
   (SpringQuarterFn(AcademicYearFn NorthwesternUniversity (YearFn 2019)))
-  ?course)
+  ?course
+
+### Future work for Course Recommender:
+
+We would have liked to add more academic details of the student and courses in coming quarters in the kb. Some scheduling aspects could also be added to make better decision about choosing courses.
+
 
 ## Extra: Commoncourse_bet
 
