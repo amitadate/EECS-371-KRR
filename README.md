@@ -17,7 +17,7 @@ It works for two professors now:
 
 WillieWilson 
 
-AggelosKKatsaggelo
+AggelosKKatsaggelos
 
 
 ### Query syntax :
@@ -32,7 +32,7 @@ AggelosKKatsaggelo
 (talkrecommender ?talk1 WillieWilson 5)
 
 
-(talkrecommender ?talk1 AggelosKKatsaggelo 2)
+(talkrecommender ?talk1 AggelosKKatsaggelos 2)
 
 
 
