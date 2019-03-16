@@ -17,7 +17,22 @@ Run the queries from the below
 
 ## Knowledge Represented
 
-We have created a lot of user models (entire MSAI cohort, Omkar and a few professors). However, not all of them are represented with the same level of detail. The queries below mention which user models work for which query. For details on all the knowledge represented, please refer to the 'FactsFinal_mt3.krf' file.
+1. User models of entire MSAI cohort, Omkar and some professors. (All of them are not represented with the same level of detail. The queries below mention which user models work for which query)
+
+2. Talks till the end of March along with the topics and dates of these talks.
+
+3. Expertise of students (The students mentioned in the group_suggestion query along with a few others).
+
+4. Academic interests of students.
+
+5. Expertise of professors and their research interests.
+
+6. Courses for the Winter and Spring quarters along with what the courses are in.
+
+7. Courses taken by students.
+
+
+For details on all the knowledge represented, please refer to the 'FactsFinal_mt3.krf' file.
 
 
 ## Event Recommender
