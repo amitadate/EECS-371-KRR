@@ -1,4 +1,11 @@
 
+## Team Members:
+
+1. Amit Adate 
+2. Omkar Satpute 
+3. Mayank Malik
+4. Jaieu Sheil
+
 # Overview
 
 ### Directions :
