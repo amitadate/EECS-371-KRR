@@ -15,6 +15,10 @@ Load the attached fact and rule files into the KB.
 
 Run the queries from the below
 
+## Knowledge Represented
+
+We have created a lot of user models (entire MSAI cohort, Omkar and a few professors). However, not all of them are represented with the same level of detail. The queries below mention which user models work for which query. For details on all the knowledge represented, please refer to the 'FactsFinal_mt3.krf' file.
+
 
 ## Event Recommender
 
