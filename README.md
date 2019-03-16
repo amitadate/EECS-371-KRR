@@ -3,7 +3,7 @@
 
 ### Directions :
 
-Load the attached fact and rule files into he KB.
+Load the attached fact and rule files into the KB.
 
 
 Run the queries from the below
